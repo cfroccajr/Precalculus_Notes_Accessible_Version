@@ -1,0 +1,66 @@
+\DocumentMetadata{
+  lang        = en-US,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f, %or a-4
+  tagging=on,
+  tagging-setup={math/setup={mathml-SE,mathml-AF}},
+  testphase={phase-III,table,math,firstaid}
+}
+\documentclass{article}
+% \usepackage[accsupp]{axessibility}
+\input{acc_header}
+% \input{tex/color_thm_head}
+
+
+\usepackage[
+    pdftitle={Accessibility Testing},
+    pdfauthor={Chuck Rocca},
+    linkcolor=blue!70!black,
+    colorlinks=true,
+    urlcolor=blue!70!black
+]{hyperref}
+\usepackage{unicode-math}
+% \usepackage[tagged]{accessibility}
+
+%%%% Use to Adjust Fontsize %%%%
+% \fontsize{14pt}{16pt}
+% \selectfont
+
+\title{Accessibility Notes}
+\author{Charles Rocca}
+\date{November 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Exponents and Exponential Functions}
+\begin{expository}[Exponent Rules]\label{expo:exponent rules}
+    \begin{itemize}
+        \item When \(n\in\mathbb{Z}\), \(a^n\) is the product of \(n\)-factors of \(a\).
+        \item \(a^n\cdot a^m=a^{n+m}\)
+        \item \(a^n/a^m = a^{n-m}\) when \(a\neq 0\)
+        \item \(a^{-n}=1/a^n\)
+        \item \(a^{1/n}=\sqrt[n]{a}\)
+        \item \((ab)^n=a^n\cdot b^n\)
+        \item \((a/b)^n=a^n/b^n\) when \(b\neq 0\)
+        \item \(a^0=1\) when \(a\neq 0\)
+        \item \(a^1=a\)
+    \end{itemize}
+\end{expository}
+
+\begin{defn}[Exponential Function]
+    Given a positive constant \(a\) and a non-zero constant \(k\) the function \(f(x)=ka^x\) is called an \emph{exponential function}.  Exponential functions are characterized by the fact that there values have a constant ratio, in particular \(f(x+1)/f(x)=a\) for all \(x\).
+\end{defn}
+
+
+
+\section{Systematic Testing of Equations}
+
+
+\section{Generated Images}
+
+\end{document}
+
+
+
